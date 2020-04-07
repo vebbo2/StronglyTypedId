@@ -47,6 +47,8 @@ namespace StronglyTypedId.Generator
             {
                 case StronglyTypedIdBackingType.Int:
                     return IntSyntaxTreeGenerator.CreateStronglyTypedIdSyntax(applyToClass, _generateJsonConverter);
+                case StronglyTypedIdBackingType.Long:
+                    return LongSyntaxTreeGenerator.CreateStronglyTypedIdSyntax(applyToClass, _generateJsonConverter);
                 case StronglyTypedIdBackingType.String:
                     return StringSyntaxTreeGenerator.CreateStronglyTypedIdSyntax(applyToClass, _generateJsonConverter);
                 case StronglyTypedIdBackingType.Guid:
